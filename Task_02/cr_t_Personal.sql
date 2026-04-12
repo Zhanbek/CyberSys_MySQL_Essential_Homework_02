@@ -6,5 +6,8 @@ create table Personal(
     BirthDate date,
     Address varchar(255),
 	TaxCode char(12),
-    IsTopManager bool
+    IsTopManager bool,
+    Status varchar(50),
+	primary key(Id),
+    Unique(TaxCode)
 );
